@@ -8,11 +8,11 @@ using System.IO;
 using System.Drawing;
 using System.Media;
 
-public class HandsUpScript : Script
+public class Test : Script
 {
  // Where you initialize all your variables for use.
- private string modName = "Hands Up Script";
- private string modCreatorName = "Criebwyn";
+ private string modName = "Test";
+ private string modCreatorName = "PLACEHOLD";
 
  private Ped playerPed = Game.Player.Character;
  private Player player = Game.Player;
@@ -20,7 +20,7 @@ public class HandsUpScript : Script
  // Where you initialize the events or do anything when the mod starts.
  public HandsUpScript()
  {
-  UI.Notify(modName + " made by: " + modCreatorName + " using GTA V Script Creator 1.0");
+  UI.Notify(modName + " made by: " + modCreatorName + " using script base");
 
   Tick += OnTick;
   KeyDown += OnKeyDown;
@@ -45,7 +45,7 @@ public class HandsUpScript : Script
     {
         Ped nearestPed = World.GetNearbyPeds(Game.Player.Character, 7f)[0];
         Game.Player.Character.CurrentPedGroup.Add(nearestPed, false);
-	}
+    }
  }
 
  // When you press a key up or release it.
