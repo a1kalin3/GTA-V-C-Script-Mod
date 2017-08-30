@@ -18,7 +18,7 @@ public class Test : Script
  private Player player = Game.Player;
 
  // Where you initialize the events or do anything when the mod starts.
- public HandsUpScript()
+ public Test()
  {
   UI.Notify(modName + " made by: " + modCreatorName + " using script base");
 
